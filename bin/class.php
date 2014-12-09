@@ -41,7 +41,9 @@ nauczyciel VARCHAR(30),
 sala VARCHAR(10),
 klasa VARCHAR(5),
 dzien VARCHAR(15)
-);',$con)){
+) CHARACTER SET utf8 COLLATE utf8_polish_ci
+
+	;',$con)){
 echo "Utworzono tabele<br/>";}else{echo "SQL error<br/>";mysql_error();}
 }
 
